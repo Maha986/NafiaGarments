@@ -1,0 +1,47 @@
+@extends('admin.layouts.master')
+@section('content')
+    <input type="hidden" value="{{$activePage = 'userCreate', $title = 'Create User - Nafia Garments'}}">
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+  
+  <div class="card" style="width:550px">
+    <img class="card-img-top" src="{{ asset('storage/images/dealimages/re.png') }}" alt="Card image" style="width:100%">
+    <div class="card-body">
+     
+      <a href="{{route('customerdispatch2',$userid)}}" class="btn btn-primary btn-block">Dispatch Directly to Customer’s Address </a>
+    </div>
+  </div>
+</div>
+
+<div class="col-6">
+  
+  <div class="card" style="width:550px">
+    <img class="card-img-top" src="{{ asset('storage/images/dealimages/re.png') }}" alt="Card image" style="width:100%">
+    <div class="card-body">
+     
+      <a href="{{route('mydispatch2',$userid)}}" class="btn btn-primary btn-block">Dispatch on Reseller Address </a>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+    @endsection
+
+@section('page_css')
+    <link rel="stylesheet" href="{{asset('admin/css/plugins/toastr.css')}}" />
+@endsection
+@section('page_script')
+    <script src="{{ asset('admin/js/plugins/toastr.min.js') }}"></script>
+{{--    <script src="{{asset('admin/js/scripts/toastr.script.min.js')}}"></script>--}}
+@endsection
