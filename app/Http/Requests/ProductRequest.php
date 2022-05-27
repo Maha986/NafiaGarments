@@ -32,11 +32,19 @@ class ProductRequest extends FormRequest
             'product_weight'=>['required','numeric'],
             'purchase_cost' => ['numeric','required'],
             'purchase_discount' => ['numeric','nullable'],
+<<<<<<< HEAD
             'purchase_discount_percentage' => ['numeric','nullable','min:1','max:100'],
             'price' => ['required','numeric'],
             'list_price_for_salesman' => ['numeric','required'],
             'commission_amount'=>['numeric','required'],
             'commission' => ['numeric','required','min:1','max:100'],
+=======
+            'purchase_discount_percentage' => ['numeric','nullable','min:0','max:100'],
+            'price' => ['required','numeric'],
+            'list_price_for_salesman' => ['numeric','required'],
+            'commission_amount'=>['numeric','required'],
+            'commission' => ['numeric','required','min:0','max:100'],
+>>>>>>> b1
             'video_link' => ['string','nullable'],
             'labour_cost' => ['numeric','nullable'],
             'transportation_cost' => ['numeric','nullable'],

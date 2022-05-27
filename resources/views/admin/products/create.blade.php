@@ -273,8 +273,8 @@
                             </select>
                             @error('status')
                             <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
+                                <strong>{{ $message }}</strong>
+                            </span>
                             @enderror
                         </div>
 
@@ -333,8 +333,8 @@ $batchi = App\Models\Batch::all();
                             <input type="text" name="purchase_cost" id="purchase_cost" class="form-control @error('purchase_cost') is-invalid @enderror" placeholder="Enter Purchase Cost Here" value="{{ old('purchase_cost') }}" aria-label="purchase_cost">
                             @error('purchase_cost')
                             <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
+                                <strong>{{ $message }}</strong>
+                            </span>
                             @enderror
                         </div>
                       
@@ -344,8 +344,8 @@ $batchi = App\Models\Batch::all();
                             <input type="text" name="purchase_discount_percentage" id="purchase_discount_percentage" class="form-control @error('purchase_discount_percentage') is-invalid @enderror" placeholder="Enter Purchase Discount Percentage" value="{{ old('purchase_discount_percentage') }}" aria-label="purchase_discount_percentage">
                             @error('purchase_discount_percentage')
                             <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
+                                <strong>{{ $message }}</strong>
+                            </span>
                             @enderror
                         </div>
 
@@ -410,7 +410,7 @@ $batchi = App\Models\Batch::all();
                                     </span>
                             @enderror
                         </div>
-                        <div class="form-group">
+                        <!--<div class="form-group">
                             <label>Labour Cost</label>
 
                             <input type="text" name="labour_cost" class="form-control @error('labour_cost') is-invalid @enderror" placeholder="Enter Labour Cost Here" value="{{ old('labour_cost') }}" aria-label="labour_cost">
@@ -420,7 +420,7 @@ $batchi = App\Models\Batch::all();
                                     </span>
                             @enderror
                         </div>
-                        <!-- <div class="form-group">
+                        <div class="form-group">
                             <label>Transportation Cost</label>
 
                             <input type="text" name="transportation_cost" class="form-control @error('transportation_cost') is-invalid @enderror" placeholder="Enter Transportation Cost Here" value="{{ old('transportation_cost') }}" aria-label="transportation_cost">
@@ -476,10 +476,6 @@ $batchi = App\Models\Batch::all();
 <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
 <meta charset=utf-8 />
-
-      <input type='file' onchange="readURL(this);" />
-    <img id="blah" src="#" alt="your image" />
-
     <script>
 
 

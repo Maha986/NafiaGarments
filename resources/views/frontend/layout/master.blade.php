@@ -50,7 +50,7 @@
 <body
     class="cms-index-index index-opt-1 catalog-category-view catalog-product-view catalog-view_op1 page-order page-contact">
 
-    <div class="page-wrapper2" style="padding-top: 5px;"">
+    <div class="page-wrapper2" style="padding-top: 5px;">
         <!-- <nav class="toolbox">
             <div class="toolbox-left">
                 <div class="toolbox-item toolbox-sort"> -->
@@ -142,81 +142,6 @@
                             </li>
                             <li>
                                 <a href="product.html">Products</a>
-                                <ul class="submenu">
-                                    <li>
-                                    <a href="#" data-toggle="dropdown">Variations 1</a>
-                                    <ul class="submenu">
-                                        <li><a href="product.html">Horizontal Thumbs</a></li>
-                                        <li><a href="product-full-width.html">Vertical Thumbnails</a></li>
-                                        <li><a href="product.html">Inner Zoom</a></li>
-                                        <li><a href="product-addcart-sticky.html">Addtocart Sticky</a></li>
-                                        <li><a href="product-sidebar-left.html">Accordion Tabs</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#" data-toggle="dropdown">Variations 2</a>
-                                    <ul class="submenu">
-                                        <li><a href="product-sticky-tab.html">Sticky Tabs</a></li>
-                                        <li><a href="product-simple.html">Simple Product</a></li>
-                                        <li><a href="product-sidebar-left.html">With Left Sidebar</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#" data-toggle="dropdown">Product Layout Types</a>
-                                    <ul class="submenu">
-                                        <li><a href="product.html">Default Layout</a></li>
-                                        <li><a href="product-extended-layout.html">Extended Layout</a></li>
-                                        <li><a href="product-full-width.html">Full Width Layout</a></li>
-                                        <li><a href="product-grid-layout.html">Grid Images Layout</a></li>
-                                        <li><a href="product-sticky-both.html">Sticky Both Side Info</a></li>
-                                        <li><a href="product-sticky-info.html">Sticky Right Side Info</a></li>
-                                    </ul>
-                                </li>
-                                </ul>
-                                <!-- <div class="megamenu"> -->
-                                <!-- <div class="row"> -->
-                                <!-- <div class="column"> -->
-                                <!-- <div class="col-lg-3"> -->
-                                <!-- <a href="#" class="nolink">Variations 1</a>
-                                        <ul class="submenu">
-                                            <li><a href="product.html">Horizontal Thumbs</a></li>
-                                            <li><a href="product-full-width.html">Vertical Thumbnails</a></li>
-                                            <li><a href="product.html">Inner Zoom</a></li>
-                                            <li><a href="product-addcart-sticky.html">Addtocart Sticky</a></li>
-                                            <li><a href="product-sidebar-left.html">Accordion Tabs</a></li>
-                                        </ul> -->
-                                <!-- </div> -->
-                                <!-- End .col-lg-4 -->
-                                <!-- <div class="col-lg-3"> -->
-                                <!-- <a href="#" class="nolink">Variations 2</a>
-                                        <ul class="submenu">
-                                            <li><a href="product-sticky-tab.html">Sticky Tabs</a></li>
-                                            <li><a href="product-simple.html">Simple Product</a></li>
-                                            <li><a href="product-sidebar-left.html">With Left Sidebar</a></li>
-                                        </ul> -->
-                                <!-- </div> -->
-                                <!-- End .col-lg-4 -->
-                                <!-- <div class="col-lg-3"> -->
-                                <!-- <a href="#" class="nolink">Product Layout Types</a>
-                                        <ul class="submenu">
-                                            <li><a href="product.html">Default Layout</a></li>
-                                            <li><a href="product-extended-layout.html">Extended Layout</a></li>
-                                            <li><a href="product-full-width.html">Full Width Layout</a></li>
-                                            <li><a href="product-grid-layout.html">Grid Images Layout</a></li>
-                                            <li><a href="product-sticky-both.html">Sticky Both Side Info</a></li>
-                                            <li><a href="product-sticky-info.html">Sticky Right Side Info</a></li>
-                                        </ul> -->
-                                <!-- </div> -->
-                                <!-- End .col-lg-4 -->
-
-                                <!-- <div class="col-lg-3 p-0">
-                                        <img src="assets/images/menu-bg.png" alt="Menu banner" class="product-promo">
-                                    </div> -->
-                                <!-- End .col-lg-4  -->
-                                <!-- </div> -->
-                                <!-- End .row -->
-                                <!-- </div> -->
-                                <!-- End .megamenu -->
                             </li>
 
                             <li>
@@ -364,7 +289,6 @@
                                     @endguest
                                 </ul>
                             </li>
-                            <li><a href="https://1.envato.market/DdLk5" target="_blank">Buy Porto!</a></li>
                         </ul>
                     </nav>
                 <!-- </div>
@@ -475,42 +399,35 @@
                                     <a href="product.html">Products</a>
                                     <div class="megamenu megamenu-fixed-width">
                                         <div class="row">
-                                            <div class="col-lg-3">
+                                            <div class="col-lg-12">
                                                 <a href="#" class="nolink">Variations 1</a>
                                                 <ul class="submenu">
-                                                    <li><a href="product.html">Horizontal Thumbs</a></li>
-                                                    <li><a href="product-full-width.html">Vertical Thumbnails</a></li>
-                                                    <li><a href="product.html">Inner Zoom</a></li>
-                                                    <li><a href="product-addcart-sticky.html">Addtocart Sticky</a></li>
-                                                    <li><a href="product-sidebar-left.html">Accordion Tabs</a></li>
+                                                    
                                                 </ul>
-                                            </div><!-- End .col-lg-4 -->
+                                            </div>
+                                            <!--<div class="col-lg-3">
+                                                <a href="#" class="nolink">Variations 1</a>
+                                                <ul class="submenu">
+                                                    
+                                                </ul>
+                                            </div>End .col-lg-4
                                             <div class="col-lg-3">
                                                 <a href="#" class="nolink">Variations 2</a>
                                                 <ul class="submenu">
-                                                    <li><a href="product-sticky-tab.html">Sticky Tabs</a></li>
-                                                    <li><a href="product-simple.html">Simple Product</a></li>
-                                                    <li><a href="product-sidebar-left.html">With Left Sidebar</a></li>
+                                                    
                                                 </ul>
-                                            </div><!-- End .col-lg-4 -->
+                                            </div>
                                             <div class="col-lg-3">
                                                 <a href="#" class="nolink">Product Layout Types</a>
                                                 <ul class="submenu">
-                                                    <li><a href="product.html">Default Layout</a></li>
-                                                    <li><a href="product-extended-layout.html">Extended Layout</a></li>
-                                                    <li><a href="product-full-width.html">Full Width Layout</a></li>
-                                                    <li><a href="product-grid-layout.html">Grid Images Layout</a></li>
-                                                    <li><a href="product-sticky-both.html">Sticky Both Side Info</a>
-                                                    </li>
-                                                    <li><a href="product-sticky-info.html">Sticky Right Side Info</a>
-                                                    </li>
+                                                    
                                                 </ul>
-                                            </div><!-- End .col-lg-4 -->
+                                            </div>
 
                                             <div class="col-lg-3 p-0">
                                                 <img src="assets/images/menu-bg.png" alt="Menu banner"
                                                     class="product-promo">
-                                            </div><!-- End .col-lg-4 -->
+                                            </div>-->
                                         </div><!-- End .row -->
                                     </div><!-- End .megamenu -->
                                 </li>
@@ -526,10 +443,10 @@
 
 
 
-                                <li>
+                                <!--<li>
                                     <a href="#">Pages</a>
                                     <ul>
-                                        <!-- <li><a href="cart.html">Shopping Cart</a></li>
+                                        <li><a href="cart.html">Shopping Cart</a></li>
                                         <li><a href="#">Checkout</a>
                                             <ul>
                                                 <li><a href="checkout-shipping.html">Checkout Shipping</a></li>
@@ -577,7 +494,7 @@
                                         </li>
                                         <li><a href="contact.html">Contact Us</a></li>
                                         <li><a href="#" class="login-link">Login</a></li>
-                                        <li><a href="forgot-password.html">Forgot Password</a></li> -->
+                                        <li><a href="forgot-password.html">Forgot Password</a></li>
 
                                         <li><a href="#">Dashboard</a>
                                             <ul>
@@ -717,8 +634,7 @@
 
                                         @endguest
                                     </ul>
-                                </li>
-                                <li><a href="https://1.envato.market/DdLk5" target="_blank">Buy Porto!</a></li>
+                                </li>-->
                             </ul>
                         </nav>
                     </div><!-- End .header-left -->
