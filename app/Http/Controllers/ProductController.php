@@ -190,6 +190,7 @@ public function view_product_details($id)
             
             $colour = $request['colour_'.$i];
             $size = $request['size_'.$i];
+<<<<<<< HEAD
            $quantity = $request['quantity_'.$i];
             $qr = $request['qr_'.$i];
             $image = $request['image_'.$i];
@@ -200,6 +201,14 @@ public function view_product_details($id)
     
            
 
+=======
+            $quantity = $request['quantity_'.$i];
+            $qr = $request['qr_'.$i];
+            $image = $request['image_'.$i];
+            // print_r($size);
+            // print_r($quantity);
+    
+>>>>>>> b1
             if ($colour == null){
 
                 session::flash('message',"Color" . strval($i) . " filed is required");
@@ -234,7 +243,10 @@ public function view_product_details($id)
                 session::flash('alert-type','error');
                 return back();
             }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b1
         }
 
 
@@ -254,14 +266,22 @@ public function view_product_details($id)
             $product->purchase_cost = $request->purchase_cost;
             $product->purchase_discount = $request->purchase_discount;
             $product->purchase_discount_percentage = $request->purchase_discount_percentage;
+<<<<<<< HEAD
             $product->labour_cost = $request->labour_cost;
+=======
+>>>>>>> b1
             $product->transportation_cost = $request->transportation_cost;
             $product->list_price_for_salesman = $request->list_price_for_salesman;
             $product->commission_amount = $request->get('commission_amount');
             $product->commission = $request->get('commission');
+<<<<<<< HEAD
             //   $product->qr_code = $request->qr;
                 $product->supplier = $request->supplier;
 
+=======
+            //$product->qr_code = $request->qr;
+            $product->supplier = $request->supplier;
+>>>>>>> b1
             $product->save();
 
             $sku_code = $product->product_sku_code;
@@ -440,7 +460,10 @@ public function view_product_details($id)
             $product->purchase_cost = $request->purchase_cost;
             $product->purchase_discount = $request->purchase_discount;
             $product->purchase_discount_percentage = $request->purchase_discount_percentage;
+<<<<<<< HEAD
             $product->labour_cost = $request->labour_cost;
+=======
+>>>>>>> b1
             $product->transportation_cost = $request->transportation_cost;
             $product->list_price_for_salesman = $request->list_price_for_salesman;
             $product->commission_amount = $request->get('commission_amount');

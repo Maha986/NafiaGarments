@@ -72,7 +72,7 @@ return [
     ],
     'lte' => [
         'numeric' => 'The :attribute must be less than or equal :value.',
-        'file' => 'The :attribute must be less than or equal :value kilobytes.',
+        'file' => 'The :attribute must be less than or must be at leastequal :value kilobytes.',
         'string' => 'The :attribute must be less than or equal :value characters.',
         'array' => 'The :attribute must not have more than :value items.',
     ],
