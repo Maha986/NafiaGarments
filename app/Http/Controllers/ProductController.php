@@ -27,7 +27,6 @@ class ProductController extends Controller
     public function index()
     {
         $product = Product::all();
-
         return view('admin.products.index',['products'=>$product]);
     }
 
@@ -41,7 +40,6 @@ $from = $req->from;
         $to = $req->to;
 
     $product = Product::whereBetween('created_at', [$from." 00:00:00", $to." 23:59:59"])->get();
-
            return view('admin.products.index',['products'=>$product])->render();
 
 

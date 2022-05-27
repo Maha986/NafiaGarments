@@ -589,8 +589,16 @@ public function category_products_specific3($id)
     public function store(Request $request)
     {
       // echo  $request->parent_id;
-
-      foreach ($request->categories as $category)
+      if($request->categories == null)
+      {
+    $cat = new Category;
+    $cat->parent_id = 0;
+    $cat->title = $request->main_title;
+    $cat->gender = $request->gender;
+    $cat->slug = '0';
+}
+else{
+    foreach ($request->categories as $category)
             {
                 
             }
@@ -610,6 +618,8 @@ public function category_products_specific3($id)
          // $cat->icon = $request->icon;
          $cat->slug = '0';
          // $cat->gender = 'none';
+}
+      
          
        
         

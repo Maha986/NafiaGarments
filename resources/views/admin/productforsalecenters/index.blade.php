@@ -13,7 +13,7 @@
         <!-- end of row-->
         <div class="row mb-4">
             @php 
-    $productforsalecenter = App\Models\ProductForSalecenter::all();
+    $productforsalecenter = $products;
           @endphp
             <div class="col-md-12 mb-4">
                 <div class="card text-left">

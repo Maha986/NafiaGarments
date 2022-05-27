@@ -20,19 +20,17 @@ class ProductForSaleCenterController extends Controller
      */
     public function index()
     {
-        $products = Product::all();
+        $products = ProductForSaleCenter::all();
         return view('admin.productforsalecenters.index',['products'=>$products]);
     }
 
        public function index_date(request $req)
     {
       
-
+// dd($req);
 $from = $req->from;
         $to = $req->to;
-
-    $product = Product::whereBetween('created_at', [$from." 00:00:00", $to." 23:59:59"])->get();
-
+    $product = ProductForSaleCenter::whereBetween('created_at', [$from." 00:00:00", $to." 23:59:59"])->get();
            return view('admin.productforsalecenters.index',['products'=>$product])->render();
 
 

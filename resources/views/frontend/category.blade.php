@@ -173,7 +173,7 @@
                          </div>
                                         @if(!$product)
                         <h2 class="product-title">
-                               <a href="cat3/{{$cat->id}}">{{$cat->title}}</a>
+                               <a href="cat3/{$cat->title}}/{{$cat->id}}">{{$cat->title}}</a>
                                         </h2>
                                         @else
                              <h2 class="product-title">

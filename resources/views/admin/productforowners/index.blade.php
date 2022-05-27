@@ -66,6 +66,13 @@
 
           @php
          $pro = App\Models\Product::where('id',$productowner->product_id)->get();
+        if(sizeof($pro) <= 0)
+        {
+        @endphp
+         
+            <td></td>
+            @php
+        }
          foreach($pro as $p)
          {
             @endphp

@@ -60,11 +60,66 @@
             <div class="col-md-12">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <div class="card-title mb-3">Create New Category</div>
+                        <!-- <div class="card-title mb-3">Create New Category</div> -->
                         <form class="forms-sample" method="POST" action="{{ route('category.store') }}" enctype="multipart/form-data">
                             @csrf()
+                        <div class="card-title mb-3">Create Main Category</div>
                             <div class="row">
+                                
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label for="selectCategory">Select Gender</label>
+                                        <select class="form-control" id="selectCategory" name="gender"required>
+                                            <option selected disabled> Select Gender </option>
+                                          
+                                                <option>men</option>
+        
+                                                <option>women</option>
+                                          
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 form-group mb-3">
+                                    <label>New Main Category</label>
 
+                                        <input type="text" required name="main_title" class="form-control @error('title') is-invalid @enderror" placeholder="Enter New Category"  aria-label="main_title">
+                                    </div>
+                                    
+                                   
+                                    @error('title')
+                                    <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary" style="margin-left:25%">Submit</button>
+                                    </div>
+                                
+                            </div>
+                           
+                            
+                            </form>
+                        <form class="forms-sample" method="POST" action="{{ route('category.store') }}" enctype="multipart/form-data">
+                            @csrf()
+                        <div class="card-title mb-3">Create Sub-Category</div>
+                            <!-- <div class="col-md-6 form-group mb-3">
+                                <label for="selectCategory">Select Gender</label>
+                                <select class="form-control" id="selectCategory" name="gender"required>
+                                    <option selected disabled> Select Gender </option>
+                                  
+                                        <option>men</option>
+
+                                        <option>women</option>
+                                  
+                                </select>
+                                <input type="text" name="main_title" class="form-control @error('title') is-invalid @enderror" placeholder="Enter New Category"  aria-label="main_title">
+                                @error('title')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div> -->
+                            <div class="row">
+                                
 
 <!-- <div class="col-md-6 form-group mb-3">
                                     <label for="selectCategory">Select Gender</label>
@@ -95,10 +150,7 @@
                                 <select class="form-control @error('categories') is-invalid @enderror" id="selectCategory" name="categories[]" multiple size="10">
                                     <option value="none" selected="" disabled="">Select Product Category</option>
                                     @foreach($categories as $category)
-
-
                                         @if($category->parent_id == 0)
-
                                             <option style="font-size: 20px; font-style: bold;" value="{{ $category->id }}" label="{{ $category->title }}">
 
                                             @php
@@ -106,13 +158,9 @@
                                                 ->where('parent_id',$category->id)
                                                 ->get()
                                             @endphp
-
                                                 @if(count($first_child_categories) != false)
-
                      @foreach($first_child_categories as $first_child_category)
-
              <option value="{{ $first_child_category->id }}"> -{{$first_child_category->title }}</option>
-
                                      @php
                        $second_child_categories =  DB::table('categories')
                                                                 ->where('parent_id',$first_child_category->id)
@@ -161,29 +209,10 @@
                             </div>
 
                             </div>   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                              
                                 <div class="col-md-6 form-group mb-3">
                                     <label>New Category</label>
-                                    <input type="text" name="title" class="form-control @error('title') is-invalid @enderror" placeholder="Enter New Category" value="{{ old('title') }}" aria-label="title">
+                                    <input type="text" name="title" required class="form-control @error('title') is-invalid @enderror" placeholder="Enter New Category" value="{{ old('title') }}" aria-label="title">
                                     @error('title')
                                     <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>

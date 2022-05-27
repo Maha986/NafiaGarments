@@ -109,6 +109,7 @@
                                                 <ul class="submenu">
 
                                                     @foreach($parent2 as $par2)
+                                                    
                                                     <li><a href="{{route('cat3', ['id' => $par2->id])}}"
                                                             style="padding-left:10px;">
                                                             {{$par2->title}}
